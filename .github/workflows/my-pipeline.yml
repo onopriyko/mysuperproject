@@ -1,0 +1,21 @@
+#---------------------------------------
+# Github Actions 
+# 
+# Copyleft (c) by Evgeny Onopriyko 2020
+#---------------------------------------
+name: Github-Actions-Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world!"
+
