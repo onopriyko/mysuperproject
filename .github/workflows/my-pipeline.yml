@@ -17,6 +17,6 @@ jobs:
     
     steps:
       - name: Run a one-line script
-        run: lsb_release -a
+        run: ls -la
 
 
