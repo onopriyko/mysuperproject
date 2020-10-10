@@ -16,7 +16,16 @@ jobs:
 
     
     steps:
+      - name: Clone my repo
+        uses: actions/checkout@v1
+        
       - name: Run a one-line script
         run: ls -la
+        
+      - name: docker version
+        run: docker --version
+        
+      - name: DPKG -L
+        run: dpkg -l
 
 
